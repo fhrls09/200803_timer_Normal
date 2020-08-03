@@ -19,16 +19,40 @@ input.onButtonPressed(Button.B, function () {
         settime += -1
         basic.showNumber(settime)
     }
-    music.playTone(262, music.beat(BeatFraction.Whole))
-    music.playTone(294, music.beat(BeatFraction.Whole))
-    music.playTone(330, music.beat(BeatFraction.Whole))
+    for (let index = 0; index < 3; index++) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . . . . .
+            . . . . .
+            `)
+        music.playTone(262, music.beat(BeatFraction.Eighth))
+        basic.showLeds(`
+            . . . . .
+            . # # # .
+            . # . # .
+            . # # # .
+            . . . . .
+            `)
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+        basic.showLeds(`
+            # # # # #
+            # . . . #
+            # . . . #
+            # . . . #
+            # # # # #
+            `)
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+    }
     basic.showLeds(`
         . . . . .
         . . . . .
-        . # # # .
+        . . # . .
         . . . . .
         . . . . .
         `)
+    music.playTone(392, music.beat(BeatFraction.Whole))
 })
 let settime = 0
 settime = 0
