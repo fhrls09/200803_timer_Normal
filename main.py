@@ -29,11 +29,10 @@ def on_button_pressed_b():
     basic.show_leds("""
         . . . . .
         . . . . .
-        . . # . .
+        . # # # .
         . . . . .
         . . . . .
         """)
-    control.wait_for_event(0, 0)
 input.on_button_pressed(Button.B, on_button_pressed_b)
 
 settime = 0
