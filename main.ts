@@ -27,7 +27,7 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             . . . . .
             `)
-        music.playTone(262, music.beat(BeatFraction.Eighth))
+        music.playTone(262, music.beat(BeatFraction.Quarter))
         basic.showLeds(`
             . . . . .
             . # # # .
@@ -35,7 +35,7 @@ input.onButtonPressed(Button.B, function () {
             . # # # .
             . . . . .
             `)
-        music.playTone(330, music.beat(BeatFraction.Eighth))
+        music.playTone(330, music.beat(BeatFraction.Quarter))
         basic.showLeds(`
             # # # # #
             # . . . #
@@ -43,7 +43,7 @@ input.onButtonPressed(Button.B, function () {
             # . . . #
             # # # # #
             `)
-        music.playTone(330, music.beat(BeatFraction.Eighth))
+        music.playTone(330, music.beat(BeatFraction.Quarter))
     }
     basic.showLeds(`
         . . . . .
